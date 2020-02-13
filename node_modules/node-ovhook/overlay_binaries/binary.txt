@@ -1,0 +1,6 @@
+After building, the game-overlay project should place a few overlay helper libraries and exe's here. If they missing, node-ovhook will not work.
+
+### file list ###
+n_overlay.dll      n_ovhelper.ilk     n_ovhelper.x64.ilk
+n_overlay.x64.dll  n_ovhelper.pdb     n_ovhelper.x64.pdb
+n_ovhelper.exe     n_ovhelper.x64.exe
