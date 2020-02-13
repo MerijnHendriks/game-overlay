@@ -9,6 +9,4 @@ if (os.platform() === 'win32') {
         input: 'win32 detected. Build native modules.',
         stdio: 'inherit'
     });
-
-    fs.copySync('./overlay_binaries', './build/Release');
 }
