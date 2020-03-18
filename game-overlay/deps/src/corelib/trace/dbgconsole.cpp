@@ -7,22 +7,23 @@ namespace trace {
 
 void DebugConsole::allocDebugConsole()
 {
-//#ifdef _DEBUG
+#ifdef _DEBUG
     AllocConsole();
     SetConsoleTitleW(L"Debug Console");
     freopen("conin$", "r+t", stdin);
     freopen("conout$", "w+t", stdout);
     freopen("conout$", "w+t", stderr);
-
-//#endif // _DEBUG
+#endif _DEBUG
 }
 
 void DebugConsole::releaseDebugConsole()
 {
+#ifdef _DEBUG
 	HWND wnd = GetConsoleWindow();
 	FreeConsole();
 
 	PostMessage(wnd, WM_CLOSE, 0, 0);
+#endif _DEBUG
 }
 
 void DebugConsole::setConsoleTitle(const std::string& value)
@@ -43,7 +44,7 @@ namespace trace
 
     std::vector<rang::fg> color_ = { rang::fg::red, rang::fg::green, rang::fg::yellow,rang::fg::blue,rang::fg::magenta,rang::fg::cyan, rang::fg::gray };
     std::vector<rang::fgB> colorB_ = { rang::fgB::red, rang::fgB::green, rang::fgB::yellow,rang::fgB::blue,rang::fgB::magenta,rang::fgB::cyan, rang::fgB::gray };
-    
+
     std::set< std::string > mods_;
     std::unordered_map<std::string, std::chrono::microseconds> mods_ts_;
     std::unordered_map<std::string, int> mods_color_;
@@ -73,7 +74,7 @@ namespace trace
         }
 
         static int color(const std::string& mod) {
-            
+
             int i = (int)(std::hash<std::string>()(mod)) % color_.size();
             return i;
         }
