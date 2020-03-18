@@ -53,7 +53,6 @@ namespace trace
 
     bool enabled_(const std::string& mod)
     {
-        return true;
         return mods_.find(mod) != mods_.end();
     }
 
