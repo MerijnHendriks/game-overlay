@@ -44,7 +44,7 @@ INT WINAPI DllMain(HINSTANCE hModule, DWORD dwReason, LPVOID)
     }
     if (dwReason == DLL_PROCESS_DETACH)
     {
-        trace::DebugConsole::allocDebugConsole();
+        trace::DebugConsole::releaseDebugConsole();
         HookApp::uninitialize();
     }
 
