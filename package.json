@@ -8,7 +8,5 @@
   },
   "repository": "https://github.com/TeamGuilded/game-overlay.git",
   "dependencies": {
-    "electron-overlay": "file:./electron-overlay",
-    "node-ovhook": "file:./node-ovhook"
   }
 }
