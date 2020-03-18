@@ -13,7 +13,7 @@ void DebugConsole::allocDebugConsole()
     freopen("conin$", "r+t", stdin);
     freopen("conout$", "w+t", stdout);
     freopen("conout$", "w+t", stderr);
-#endif _DEBUG
+#endif // _DEBUG
 }
 
 void DebugConsole::releaseDebugConsole()
@@ -23,7 +23,7 @@ void DebugConsole::releaseDebugConsole()
 	FreeConsole();
 
 	PostMessage(wnd, WM_CLOSE, 0, 0);
-#endif _DEBUG
+#endif //_DEBUG
 }
 
 void DebugConsole::setConsoleTitle(const std::string& value)
