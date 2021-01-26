@@ -22,7 +22,7 @@ Use the power of web to inject any web app to overlay in your game
 
 ## Requirements
 
-- Visual Studio 2017 (C++ desktop workspace, winsdk 10.0.18362).
+- Visual Studio 2019 (C++ desktop workspace, winsdk 10.0.18362).
 - Python 2 (`add to PATH`)
 
 ## Build
