@@ -4,7 +4,7 @@ Forked from [hiitiger/gelectron](https://github.com/hiitiger/gelectron)
 
 ![demo](https://raw.githubusercontent.com/hiitiger/gelectron/master/screenshot/gelectron3.gif)
 
-use the power of web to inject any web app to overlay in your game
+Use the power of web to inject any web app to overlay in your game
 
 ## Features
 
@@ -22,7 +22,7 @@ use the power of web to inject any web app to overlay in your game
 
 ## Requirements
 
-- Visual Studio 2017 with C++ workspace.
+- Visual Studio 2017 (C++ desktop workspace, winsdk 10.0.18362).
 - Python 2 (`add to PATH`)
 
 ## Build
